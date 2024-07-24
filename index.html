@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSAFY 서울 12반 밥조</title>
+        <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #F7F7F7;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        #title_msg, #time_display {
+            font-size: 2em;
+            color: #303030;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .group {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .group div {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            #title_msg, #time_display {
+                font-size: 1.5em;
+            }
+            .group {
+                padding: 10px;
+                margin-bottom: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title_msg"></h1>
+    <h1 id="time_display"></h1>
+    <div id="groups"></div>
+
+</body>
+<script type="text/javascript" src="assignGroup.js"></script>
+</html>
