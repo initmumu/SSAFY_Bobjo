@@ -26,8 +26,8 @@ function assignGroups() {
         "\uD55C\uC885\uC6B0"
     ];
     const numGroups = 6;
-
-    const date = new Date();
+    const offset = new Date().getTimezoneOffset() * 60000;
+    const date = new Date(Date.now() - offset);
     const seed = parseInt(date.toISOString().split('T')[0].replace(/-/g, ''));
 
     const random = mulberry32(seed);
